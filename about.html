@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Pick | About</title>
+    <link href="./about.css" rel="stylesheet"/>
+    <link rel="icon" href="http://example.com/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+    <link rel="icon" href="./images/logo-icon.ico" type="image/x-icon"/>
+</head>
+<body class ="body-container">
+    <header>
+        <div id = "logo">
+            <img src ="./images/logo-small.png" alt= "Hair Pick Logo">
+        </div>
+    <nav class = "container-nav ">
+        <a href="./index.html" id="home">Home</a>
+        <a href="./hairstyles.html" id="hairstyles">Hairstyles</a>
+        <a href="./about.html" id="about">About</a>
+    </nav>
+</header> 
+    <section class ="about-container">
+        <img src ="images/ladies wall.jpg" width = "100%" alt = "4 black ladies stood in front of wall">
+        <h1 class = "about-title">About Hair Pick</h1>
+        <p class ="about-para">Hair Pick is the answer to all your hairstyle needs. Created by a naturalista for naturalistas who want to save their coins and style their crown.
+             <br> Coming soon... Next spring Hair Pick will sells the best products for natural type 4 hair at affordable prices. Using only the finest, organic ingredients, Hair Pick will have your tresses looking fabulous in a matter of weeks.</p>
+    </section>
+<!--mailing list footer-->
+        <footer>
+            <div class ="mailing-list">
+                <h4>Need inspiration for your next do?</h3>
+                <p>Join the Hair Pick mailing list for tips, advice and new hair care products.</p>
+                <form action="/action_page.html">
+                Name: 
+                <input type="text" name="name" required placeholder="Enter your name">
+                Email:
+                <input type="email" name="email" required placeholder="Enter email address">
+                <button class ="email-submit" onclick="emailFunction()">Subscribe</button>
+                </form>
+            </div>
+        </footer>
+</body>
+<script>
+    function emailFunction(){
+  alert("Did you input your details? If you did, thank you for signing up");
+}
+</script>
+</html>

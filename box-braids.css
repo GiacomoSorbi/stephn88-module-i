@@ -1,0 +1,84 @@
+/*logo*/
+#logo {
+  display: flex;
+  justify-content: center;
+  padding:20px;
+}
+
+.container-nav, .instructions-container {
+  font-family: 'bebas neue', cursive;
+  font-size: 25px;
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  color:black;
+}  
+
+.container-nav:hover {
+    color: blue;
+}
+ 
+html, body {
+  background-color: white;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "bebas neue";
+  font-size: 60px;
+  text-align: center;
+  }
+
+h4 {
+  font-family: "bebas neue";
+  font-size: 40px;
+  text-align: center;
+}
+
+ul {
+  font-family: "bebas neue";
+  font-size: 20px;
+  height:70px;
+}
+
+.video-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+  border: deeppink 7px solid;
+}
+.video-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.braid-image {
+  width: 100%;
+  height: auto;  
+  padding: 10px;
+}
+
+.mailing-list {
+  font-family: "oswald";
+  display: flex;
+  align-items: space-around;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+    
+}
+    
+.email-submit {
+  background-color: deeppink;
+  border: fancy;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  margin: 4px 2px;
+  font-family: "oswald";
+}
