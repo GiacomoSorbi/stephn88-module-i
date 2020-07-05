@@ -88,6 +88,16 @@ h4 {
   justify-content: center;
 }
 
+/*no results message*/
+
+.no-results-text {
+  font-family: "bebas neue";
+  text-align: center;
+  font-size: 40px;
+  display: none;
+  color: red;
+}
+
 /*social media banner*/
 li {
   list-style-type: none;
@@ -113,7 +123,7 @@ li:hover {
   padding: 20px;
   text-align: center;
   color: black;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 350px) {

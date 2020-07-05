@@ -45,21 +45,20 @@
             <input type="radio" id="adapt" name="length" value="adapt"onclick="activateFilter('length', null)" checked>
             <label for="adapt">All</label>
          </div>
- 
          <div class ="hair-state">
              <h4>How's your hair now?</h4>
              <input type="radio" id="washed" name="state" value="washed" onclick="activateFilter('state', 'washed')">
              <label for="washed">Freshly washed</label>
-             <input type="radio" id="h-washed-stretched" name="state" value="h-state-washed" onclick="activateFilter('state', 'stretched')">
-             <label for="h-washed-stretched">Freshly washed and stretched</label>
-             <input type="radio" id="h-state-blown-out" name="state" value="h-state-washed-blown-out" onclick="activateFilter('state', 'blown')">
-             <label for="h-state-blown-out">Blown out</label>
-             <input type="radio" id="h-state-3-days" name="state" value="h-state-3-days" onclick="activateFilter('state', '3 days')">
-             <label for="h-state-blown-out">3 days old</label>
-             <input type="radio" id="h-state-dirty" name="state" value="h-state-dirty" onclick="activateFilter('state', 'dirty')">
-             <label for="h-state-blown-out">It's nearly wash day</label>
-             <input type="radio" id="h-state-all" name="state" value="h-state-all" onclick="activateFilter('state', null)" checked>
-             <label for="h-state-all">All</label>
+             <input type="radio" id="stretched" name="state" value="stretched" onclick="activateFilter('state', 'stretched')">
+             <label for="stretched">Freshly washed and stretched</label>
+             <input type="radio" id="blown-out" name="state" value="washed-blown-out" onclick="activateFilter('state', 'blown')">
+             <label for="blown-out">Blown out</label>
+             <input type="radio" id="3-days" name="state" value="3-days" onclick="activateFilter('state', '3 days')">
+             <label for="3-days">3 days old</label>
+             <input type="radio" id="dirty" name="state" value="dirty" onclick="activateFilter('state', 'dirty')">
+             <label for="dirty">It's nearly wash day</label>
+             <input type="radio" id="all-states" name="state" value="all-states" onclick="activateFilter('state', null)" checked>
+             <label for="all-states">All</label>
          </div>
          <div class = "duration">
              <h4>How much time do you have?</h4>
@@ -74,7 +73,7 @@
              <input type="radio" id="3-4hrs" name="duration" value="3-4hrs" onclick="activateFilter('duration', 3)">
              <label for="3-4hrs">3 - 4 hours</label>
              <input type="radio" id="4hrs+" name="duration" value="4hrs+" onclick="activateFilter('duration', 4)">
-             <label for="3-4hrs">Over 4 hours</label>
+             <label for="4hrs+">Over 4 hours</label>
              <input type="radio" id="all-times" name="duration" value="all-times" onclick="activateFilter('duration', null)" checked>
              <label for="all-times">All</label>
          </div>
@@ -106,7 +105,6 @@
              <input type="radio" id="all-abilities" name="ability" value="all-abilities"onclick="activateFilter('ability', null)" checked>
             <label for="all-abilities">All</label>
          </div>
-         <h2>Too specific? No more options? Try different filters</h2>
         </div>
        
     <!--vidoes-->
@@ -180,39 +178,37 @@
             <h3 >Drawstring Ponytail</h3>
             <iframe title="Drawstring Ponytail tutorial" src="https://www.youtube.com/embed/NgeNU3N8q4s?start=143" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
+        <article id="no-results" class="no-results-text">No results found. Were you too specific? Try different filters.</article>
     </section>
 </main>
  
-        <footer>
-            <div class="social-media">
-              <h4>Need inspiration for your next do?</h4>
-              <p>
-                Follow us on social media for tips, advice and new hair care products.
-              </p>
-              <ul>
-                <li>
-                  <a href="https://en-gb.facebook.com/" alt="Facebook"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/" alt="Twitter"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="https:/instagram.com/" alt="Instagram"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="https:/youtube.com/" alt="YouTube"><i class="fab fa-youtube"></i></a>
-                </li>
-              </ul>
-            </div>
-        
-          </footer>
+    <footer>
+        <div class="social-media">
+            <h4>Need inspiration for your next do?</h4>
+            <p>
+            Follow us on social media for tips, advice and new hair care products.
+            </p>
+            <ul>
+            <li>
+                <a href="https://en-gb.facebook.com/"><span class="fab fa-facebook-f"></span></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/"><span class="fab fa-twitter"></span></a>
+            </li>
+            <li>
+                <a href="https:/instagram.com/"><span class="fab fa-instagram"></span></a>
+            </li>
+            <li>
+                <a href="https:/youtube.com/"><span class="fab fa-youtube"></span></a>
+            </li>
+            </ul>
+        </div>
+        </footer>
         </body>
-       <script src ="./js/hairstyles.js" type="text/javascript"></script>
+       <script src ="./js/hairstyles.js"></script>
         <script
           src="https://kit.fontawesome.com/352b649aa2.js"
           crossorigin="anonymous"
         ></script> 
-      </html> 
+      </html>
 
