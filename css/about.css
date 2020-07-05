@@ -1,0 +1,89 @@
+/*logo*/
+#logo {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/*nav*/
+.container-nav {
+  font-family: "bebas neue", cursive;
+  font-size: 25px;
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  color: black;
+  flex-wrap: wrap;
+}
+
+.container-nav:hover {
+  color: blue;
+}
+
+/*body*/
+
+html,
+body {
+  background-color: white;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-container {
+  display: grid;
+}
+
+.about-title {
+  font-family: "bebas neue";
+  font-size: 60px;
+  margin: auto;
+  padding-top: 30px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.about-para {
+  font-family: "oswald";
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+}
+
+img {
+  padding-top: 30px;
+}
+/*social media banner*/
+li {
+  list-style-type: none;
+  margin: 10px 30px;
+  display: inline-block;
+  padding: 20px 20px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 40%;
+  transform: 0.5s;
+  text-align: center;
+}
+
+li:hover {
+  border: 1px solid blue;
+  color: blue;
+  transition: 0.5s;
+  border-radius: 0%;
+}
+
+.social-media {
+  font-family: "oswald";
+  padding: 20px;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+}

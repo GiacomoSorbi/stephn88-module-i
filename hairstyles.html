@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="suggested hairstyles page on website for people with type 4 hair to help them pick their next hairstyle.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hairstyles | Hair Pick</title>
+    <link href="./css/hairstyles.css" rel="stylesheet" />
+    <link rel="icon" href="http://example.com/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap"      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+    <link rel="icon" href="./images/logo-icon.ico" type="image/x-icon"/>
+</head>
+<body class ="hairstyles-body-container">
+    <header>
+        <div id = "logo">
+            <img src ="./images/logo-small.png" alt= "Hair Pick Logo">
+        </div>
+        <nav>
+            <nav class = "container-nav">
+                <a href="./index.html" id="home">Home</a>
+                <a href="./hairstyles.html" id="hairstyles">Hairstyles</a>
+                <a href="./about.html" id="about">About</a>
+            </nav>
+        </header>
+<!--filters--> 
+        <main class ="container">
+            <button type="button" class="collapsible">Filters +</button>
+            <div class="filters-menu">
+            <h2>Too much choice? Narrow it down</h2>
+        <div class ="length">
+            <h4>Hair Length</h4>
+            <input type="radio" id="twa" name="length" value="twa"  onclick="activateFilter('length', 'twa')">
+            <label for="twa">Teeny Weeny Afro (TWA)</label>
+            <input type="radio" id="big-chop" name="length" value="big-chop" onclick="activateFilter('length', 'big chop')">
+            <label for="big-chop">Big Chop</label>
+            <input type="radio" id="chin-length" name="length" value="chin-length" onclick="activateFilter('length', 'chin')">
+            <label for="chin-length">Chin Length</label>
+            <input type="radio" id="shoulder-length" name="length" value="shoulder-length" onclick="activateFilter('length', 'shoulder')">
+            <label for="shoulder-length">Shoulder Length</label>
+            <input type="radio" id="mid-back-length" name="length" value="mid-back-length" onclick="activateFilter('length', 'mid-back')">
+            <label for="mid-back-length">Mid Back</label>
+            <input type="radio" id="longer-length" name="length" value="longer-length" onclick="activateFilter('length', 'longer-length')">
+            <label for="longer-length">Longer</label>
+            <input type="radio" id="adapt" name="length" value="adapt"onclick="activateFilter('length', null)" checked>
+            <label for="adapt">All</label>
+         </div>
+ 
+         <div class ="hair-state">
+             <h4>How's your hair now?</h4>
+             <input type="radio" id="washed" name="state" value="washed" onclick="activateFilter('state', 'washed')">
+             <label for="washed">Freshly washed</label>
+             <input type="radio" id="h-washed-stretched" name="state" value="h-state-washed" onclick="activateFilter('state', 'stretched')">
+             <label for="h-washed-stretched">Freshly washed and stretched</label>
+             <input type="radio" id="h-state-blown-out" name="state" value="h-state-washed-blown-out" onclick="activateFilter('state', 'blown')">
+             <label for="h-state-blown-out">Blown out</label>
+             <input type="radio" id="h-state-3-days" name="state" value="h-state-3-days" onclick="activateFilter('state', '3 days')">
+             <label for="h-state-blown-out">3 days old</label>
+             <input type="radio" id="h-state-dirty" name="state" value="h-state-dirty" onclick="activateFilter('state', 'dirty')">
+             <label for="h-state-blown-out">It's nearly wash day</label>
+             <input type="radio" id="h-state-all" name="state" value="h-state-all" onclick="activateFilter('state', null)" checked>
+             <label for="h-state-all">All</label>
+         </div>
+         <div class = "duration">
+             <h4>How much time do you have?</h4>
+             <input type="radio" id="under-30-mins" name="duration" value="under-30-mins" onclick="activateFilter('duration', .25)">
+             <label for="under-30-mins">Under 30 minutes</label>
+             <input type="radio" id="30-mins" name="duration" value="30-mins" onclick="activateFilter('duration', .5)">
+             <label for="30-mins">30 minutes</label>
+             <input type="radio" id="30-60mins" name="duration" value="30-60mins" onclick="activateFilter('duration', 1)">
+             <label for="30-60mins">1 hour</label>
+             <input type="radio" id="1-2hrs" name="duration" value="1-2hrs" onclick="activateFilter('duration', 2)">
+             <label for="1-2hrs">1 - 2 hours</label> 
+             <input type="radio" id="3-4hrs" name="duration" value="3-4hrs" onclick="activateFilter('duration', 3)">
+             <label for="3-4hrs">3 - 4 hours</label>
+             <input type="radio" id="4hrs+" name="duration" value="4hrs+" onclick="activateFilter('duration', 4)">
+             <label for="3-4hrs">Over 4 hours</label>
+             <input type="radio" id="all-times" name="duration" value="all-times" onclick="activateFilter('duration', null)" checked>
+             <label for="all-times">All</label>
+         </div>
+         <div class = "leave-in-style">
+             <h4>How long do you want the style to last?</h4>
+            <input type="radio" id="one-day" name="lasts" value="one-day" onclick="activateFilter('lasts', 'one-day')">
+            <label for="one-day">1 day</label>
+            <input type="radio" id="couple-days" name="lasts" value="couple-days" onclick="activateFilter('lasts', 'couple-days')">
+            <label for="couple-days">Couple of days</label>
+            <input type="radio" id="one-wk" name="lasts" value="one-wk" onclick="activateFilter('lasts', 'one-wk')">
+            <label for="one-wk">Up to 1 week</label>
+            <input type="radio" id="two-wks" name="lasts" value="two-wks" onclick="activateFilter('lasts', 'two-wks')">
+            <label for="two-wks">Up to 2 weeks</label>
+            <input type="radio" id="1mnt" name="lasts" value="1mnt" onclick="activateFilter('lasts', '1mnt')">
+            <label for="1mnt">Up to 1 month</label>
+            <input type="radio" id="3mnt" name="lasts" value="3mnt" onclick="activateFilter('lasts', '3mnt')">
+            <label for="3mnt">Up to 3 months</label>
+            <input type="radio" id="all-lasts" name="lasts" value="all-lasts"onclick="activateFilter('lasts', null)" checked>
+            <label for="all-lasts">All</label>
+         </div>
+         <div class = "ability">
+             <h4>Ability</h4>
+             <input type="radio" id="beginner" name="ability" value="beginner" onclick="activateFilter('ability', 'beginner')">
+             <label for="beginner">Beginner</label>
+             <input type="radio" id="intermediate" name="ability" value="intermediate" onclick="activateFilter('ability', 'intermediate')">
+             <label for="intermediate">Intermediate</label>
+             <input type="radio" id="expert" name="ability" value="expert" onclick="activateFilter('ability', 'expert')">
+             <label for="expert">Expert</label>
+             <input type="radio" id="all-abilities" name="ability" value="all-abilities"onclick="activateFilter('ability', null)" checked>
+            <label for="all-abilities">All</label>
+         </div>
+         <h2>Too specific? No more options? Try different filters</h2>
+        </div>
+       
+    <!--vidoes-->
+         <section class = "video-container">
+    <!--box braids-->
+        <article id ="box-braid">
+            <h3>Box Braids</h3>
+            <iframe title="Box Braids tutorial" src="https://www.youtube.com/embed/wH1WB23ycJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+        </article>
+        <article id ="knotless-braid">
+            <h3>Knotless Box Braids</h3>
+            <iframe title="Two Braids & tuck tutorial" src="https://www.youtube.com/embed/eS64yozs10U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>  
+        <article id="crochet">
+            <h3>Crochet Braids</h3>
+            <iframe title="Crochet Braids tutorial" src="https://www.youtube.com/embed/Hyg_lBdBS5o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>  
+    <!--puffs--> 
+        <article class id ="puff">
+           <h3>Afro Puff</h3>
+            <iframe title="Afro Puff tutorial" src="https://www.youtube.com/embed/y1Al7Abbzzs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>  
+    <!--braids, twists etc.--> 
+        <article id ="braid-tuck">
+            <h3>Two Braids & Tuck</h3>
+            <iframe title="Two Braids & tuck tutorial" src="https://www.youtube.com/embed/rKvt4QLanvQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>  
+        <article id ="twisted-crown">
+            <h3>Asymmetrical Twisted Crown</h3>
+            <iframe title="Asymmetrical Twisted Crown" src="https://www.youtube.com/embed/0_yj90gxpPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>  
+        <article id ="twist-out">
+            <h3>Twist Out</h3>
+            <iframe title="Twist Out tutorial" src="https://www.youtube.com/embed/NUPEnaHTvw0?start=143" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    <!--cornrows/french braids-->  
+        <article id ="feedin-braids" >
+            <h3>Sleek Feed-in Braids</h3>
+            <iframe title="Feed-in Braids tutorial" src="https://www.youtube.com/embed/GaqPQl4oG14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article> 
+    <!--locs--> 
+        <article  id ="locs">
+            <h3>Faux Locs on Short Hair</h3>
+            <iframe title="Faux Locs on short hair tutorial" src="https://www.youtube.com/embed/es1MyKxj7Bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>  
+    <!--curls-->
+        <article id ="fing-coils">
+            <h3>Finger Coils</h3>
+            <iframe title="Finger Coils tutorial" src="https://www.youtube.com/embed/4R4SbuyTgZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>  
+        <article id ="fing-waves">
+            <h3>Finger Waves</h3>
+            <iframe title="Finger Waves tutorial" src="https://www.youtube.com/embed/qnhXup4RTQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+        </article>  
+    <!--TWA-->
+        <article id ="tap-afro">
+            <h3>Tapered Afro</h3>
+            <iframe title="Tapered Afro tutorial" src="https://www.youtube.com/embed/oajjY3IsBNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>  
+        <article id ="big-chop-off">
+            <h3>Big Chop</h3>
+        <iframe title="Big Chop tutorial" src="https://www.youtube.com/embed/-Qt-3y9EJJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    <!--buns-->
+        <article id ="sleek-bun">
+            <h3>Low Sleek Bun</h3>
+            <iframe title="Low Sleek Bun tutorial" src="https://www.youtube.com/embed/ZUwLzravOow?start=143" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    <!--clip in/weave/wigs-->
+        <article id ="d-pony">
+            <h3 >Drawstring Ponytail</h3>
+            <iframe title="Drawstring Ponytail tutorial" src="https://www.youtube.com/embed/NgeNU3N8q4s?start=143" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>
+</main>
+ 
+        <footer>
+            <div class="social-media">
+              <h4>Need inspiration for your next do?</h4>
+              <p>
+                Follow us on social media for tips, advice and new hair care products.
+              </p>
+              <ul>
+                <li>
+                  <a href="https://en-gb.facebook.com/" alt="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/" alt="Twitter"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https:/instagram.com/" alt="Instagram"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="https:/youtube.com/" alt="YouTube"><i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </body>
+       <script src ="/js/hairstyles.js"></script>
+        <script
+          src="https://kit.fontawesome.com/352b649aa2.js"
+          crossorigin="anonymous"
+        ></script> 
+      </html>
+
