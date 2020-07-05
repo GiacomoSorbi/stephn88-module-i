@@ -1,65 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="website for people with type 4 hair to help them pick their next hairstyle."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hair Pick</title>
-    <link href="./hairpick.css" rel="stylesheet" />
-    <link rel="icon" href="http://example.com/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap"      rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
-    <link rel="icon" href="./images/logo-icon.ico" type="image/x-icon"/>
-</head>
-<body class = "body-index-container">
+    <link href="./css/hairpick.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="http://example.com/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/logo-icon.ico" type="image/x-icon" />
+  </head>
+  <body class="body-index-container">
     <header>
-        <div id = "logo">
-            <img src ="./images/logo-small.png" alt= "Hair Pick Logo">
-        </div>
-    <nav class = "container-nav">
+      <div id="logo">
+        <img src="./images/logo-small.png" alt="Hair Pick Logo" />
+      </div>
+      <nav class="container-nav">
         <a href="./index.html" id="home">Home</a>
-        <a href="./hairstyles.html" id="hairstyles">Hairstyles</a>      
+        <a href="./hairstyles.html" id="hairstyles">Hairstyles</a>
         <a href="./about.html" id="about">About</a>
-    </nav>
-</header> 
-    <section>
-        <div class ="home-intro">
-        <h1 class ="home-title">PICK YOUR NEXT HAIRSTYLE</h1>
-        <img id= "homepage-afro" src ="./images/purple afro.jpg" width="100%"  alt = "black women with afro in purple light">
-      <div>
-            <a href="box-braids.html" class="picker">HAIRSTYLE PICKER</a>
-        </div>      
-        <h2>D. H. Y.</h2>
-        <h3>Do. Hairstyles. Yourself.</h3>
-        <div class ="homepage-para">
-            <p>
-                Hair Pick your next hairstyle with the help of Hair Pick. Get yo' hair did... but in the comfort of your own home. Do your hair yourself.
-            </p>
+      </nav>
+    </header>
+    <main>
+      <div class="home-intro">
+        <h1 class="home-title">PICK YOUR NEXT HAIRSTYLE</h1>
+        <img
+          id="homepage-afro"
+          src="./images/purple-afro.jpg"
+          width="100%"
+          alt="black women with afro in purple light"
+        />
+        <a href="box-braids.html" class="picker">HAIRSTYLE PICKER</a>
+      </div>
+      <div class="homepage-para-container">
+        <p>
+          Hair Pick your next hairstyle with the help of Hair Pick. Get yo' hair
+          did... but in the comfort of your own home. Do your hair yourself.
+        </p>
+      </div>
+      <section>
+        <div>
+          <h3>Most popular 'do</h3>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/eS64yozs10U"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="link-container">
+            <a href="./box-braids.html" class="learn"
+              >LEARN HOW TO DO KNOTLESS BOX BRAIDS HERE</a
+            >
+          </div>
         </div>
-    </section>
-    <section>
-           <div>
-            <h2 class ="pop-hairstyles">Most popular</h2>
-            <div class = "video-container">
-            <iframe src="https://www.youtube.com/embed/eS64yozs10U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <a href="./box-braids.html" class="learn">LEARN HOW TO KNOTLESS BOX BRAID HERE</a>
-           </div>
-    </div>
-    </section>
-<!-- mailing list footer-->
-<footer>
-    <div class ="mailing-list">
-        <h4>Need inspiration for your next do?</h3>
-        <p>Join the Hair Pick mailing list for tips, advice and new hair care products.</p>
-        <form action="/action_page.html">
-        Name: 
-        <input type="text" name="name" required placeholder="Enter your name">
-        Email:
-        <input type="email" name="email" required placeholder="Enter email address">
-        <button class ="email-submit"onclick="emailFunction()" >Subscribe</button>
-        </form>
-    </div>
-</footer>
-    <script src ="hairpick.js"></script>
-</body>
+      </section>
+    </main>
+    <!-- social media banner-->
+    <footer>
+      <div class="social-media">
+        <h4>Need inspiration for your next do?</h4>
+        <p>
+          Follow us on social media for tips, advice and new hair care products.
+        </p>
+        <ul>
+          <li>
+            <a href="https://en-gb.facebook.com/" alt="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" alt="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https:/instagram.com/" alt="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https:/youtube.com/" alt="YouTube"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/352b649aa2.js"
+    crossorigin="anonymous"
+  ></script>
 </html>

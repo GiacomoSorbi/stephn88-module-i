@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="suggested hairstyles page on website for people with type 4 hair to help them pick their next hairstyle.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hairstyles | Hair Pick</title>
-    <link href="./hairstyles.css" rel="stylesheet" />
+    <link href="./css/hairstyles.css" rel="stylesheet" />
     <link rel="icon" href="http://example.com/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap"      rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
@@ -23,7 +24,9 @@
             </nav>
         </header>
 <!--filters--> 
-        <main class ="top-filters">
+        <main class ="container">
+            <button type="button" class="collapsible">Filters +</button>
+            <div class="filters-menu">
             <h2>Too much choice? Narrow it down</h2>
         <div class ="length">
             <h4>Hair Length</h4>
@@ -103,93 +106,112 @@
              <input type="radio" id="all-abilities" name="ability" value="all-abilities"onclick="activateFilter('ability', null)" checked>
             <label for="all-abilities">All</label>
          </div>
+         <h2>Too specific? No more options? Try different filters</h2>
+        </div>
+       
     <!--vidoes-->
          <section class = "video-container">
     <!--box braids-->
         <article id ="box-braid">
             <h3>Box Braids</h3>
-            <iframe alt="Box Braids tutorial" src="https://www.youtube.com/embed/wH1WB23ycJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+            <iframe title="Box Braids tutorial" src="https://www.youtube.com/embed/wH1WB23ycJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
         </article>
         <article id ="knotless-braid">
             <h3>Knotless Box Braids</h3>
-            <iframe alt="Two Braids & tuck tutorial" src="https://www.youtube.com/embed/eS64yozs10U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Two Braids & tuck tutorial" src="https://www.youtube.com/embed/eS64yozs10U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>  
         <article id="crochet">
             <h3>Crochet Braids</h3>
-            <iframe alt="Crochet Braids tutorial" src="https://www.youtube.com/embed/Hyg_lBdBS5o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Crochet Braids tutorial" src="https://www.youtube.com/embed/Hyg_lBdBS5o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>  
     <!--puffs--> 
         <article class id ="puff">
            <h3>Afro Puff</h3>
-            <iframe alt="Afro Puff tutorial" src="https://www.youtube.com/embed/y1Al7Abbzzs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Afro Puff tutorial" src="https://www.youtube.com/embed/y1Al7Abbzzs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>  
     <!--braids, twists etc.--> 
         <article id ="braid-tuck">
             <h3>Two Braids & Tuck</h3>
-            <iframe alt="Two Braids & tuck tutorial" src="https://www.youtube.com/embed/rKvt4QLanvQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Two Braids & tuck tutorial" src="https://www.youtube.com/embed/rKvt4QLanvQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>  
         <article id ="twisted-crown">
             <h3>Asymmetrical Twisted Crown</h3>
-            <iframe src="https://www.youtube.com/embed/0_yj90gxpPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Asymmetrical Twisted Crown" src="https://www.youtube.com/embed/0_yj90gxpPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>  
         <article id ="twist-out">
             <h3>Twist Out</h3>
-            <iframe alt="Twist Out tutorial" src="https://www.youtube.com/embed/NUPEnaHTvw0?start=143" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Twist Out tutorial" src="https://www.youtube.com/embed/NUPEnaHTvw0?start=143" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
     <!--cornrows/french braids-->  
         <article id ="feedin-braids" >
             <h3>Sleek Feed-in Braids</h3>
-            <iframe alt="Feed-in Braids tutorial" src="https://www.youtube.com/embed/GaqPQl4oG14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Feed-in Braids tutorial" src="https://www.youtube.com/embed/GaqPQl4oG14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article> 
     <!--locs--> 
         <article  id ="locs">
             <h3>Faux Locs on Short Hair</h3>
-            <iframe alt="Faux Locs on short hair tutorial" src="https://www.youtube.com/embed/es1MyKxj7Bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Faux Locs on short hair tutorial" src="https://www.youtube.com/embed/es1MyKxj7Bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>  
     <!--curls-->
         <article id ="fing-coils">
             <h3>Finger Coils</h3>
-            <iframe alt="Finger Coils tutorial" src="https://www.youtube.com/embed/4R4SbuyTgZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Finger Coils tutorial" src="https://www.youtube.com/embed/4R4SbuyTgZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>  
         <article id ="fing-waves">
             <h3>Finger Waves</h3>
-            <iframe alt="Finger Waves tutorial" src="https://www.youtube.com/embed/qnhXup4RTQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+            <iframe title="Finger Waves tutorial" src="https://www.youtube.com/embed/qnhXup4RTQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
         </article>  
     <!--TWA-->
         <article id ="tap-afro">
             <h3>Tapered Afro</h3>
-            <iframe  alt="Tapered Afro tutorial" src="https://www.youtube.com/embed/oajjY3IsBNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Tapered Afro tutorial" src="https://www.youtube.com/embed/oajjY3IsBNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>  
         <article id ="big-chop-off">
             <h3>Big Chop</h3>
-        <iframe alt="Big Chop tutorial" src="https://www.youtube.com/embed/-Qt-3y9EJJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe title="Big Chop tutorial" src="https://www.youtube.com/embed/-Qt-3y9EJJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
     <!--buns-->
         <article id ="sleek-bun">
             <h3>Low Sleek Bun</h3>
-            <iframe alt="Low Sleek Bun tutorial" src="https://www.youtube.com/embed/ZUwLzravOow?start=143" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Low Sleek Bun tutorial" src="https://www.youtube.com/embed/ZUwLzravOow?start=143" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
     <!--clip in/weave/wigs-->
         <article id ="d-pony">
             <h3 >Drawstring Ponytail</h3>
-            <iframe alt="Drawstring Ponytail tutorial" src="https://www.youtube.com/embed/NgeNU3N8q4s?start=143" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Drawstring Ponytail tutorial" src="https://www.youtube.com/embed/NgeNU3N8q4s?start=143" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
     </section>
 </main>
-    <!--mailing list footer-->
-    <footer>
-        <div class ="mailing-list">
-            <h3>Need inspiration for your next do?</h3>
-            <p>Join the Hair Pick mailing list for tips, advice and new hair care products.</p>
-            <form action="/action_page">
-            Name: 
-            <input type="text" name="name" required placeholder="Enter your name">
-            Email:
-            <input type="email" name="email" required placeholder="Enter email address">
-            <button class ="email-submit" onclick="emailFunction()">Subscribe</button>
-            </form>
-        </div>
-    </footer>
-</body>
-<script src ="./hairstyles.js"></script>
-</html>
+ 
+        <footer>
+            <div class="social-media">
+              <h4>Need inspiration for your next do?</h4>
+              <p>
+                Follow us on social media for tips, advice and new hair care products.
+              </p>
+              <ul>
+                <li>
+                  <a href="https://en-gb.facebook.com/" alt="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/" alt="Twitter"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https:/instagram.com/" alt="Instagram"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="https:/youtube.com/" alt="YouTube"><i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </body>
+       <script src ="/js/hairstyles.js"></script>
+        <script
+          src="https://kit.fontawesome.com/352b649aa2.js"
+          crossorigin="anonymous"
+        ></script> 
+      </html>
+
