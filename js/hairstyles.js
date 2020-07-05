@@ -153,6 +153,13 @@ function applyFilters(testStyle) {
 }
 
 function updateVisibleStyles() {
+  let noResultsArticle = document.getElementById("no-results");
+  if (filteredStyles <= 0) {
+    noResultsArticle.style.display = "block";
+  } else {
+    noResultsArticle.style.display = "none";
+  }
+
   for (let index = 0; index < hairstyles.length; index++) {
     let testStyle = hairstyles[index];
     let hairstyleArticle = document.getElementById(testStyle.id);

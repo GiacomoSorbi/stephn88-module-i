@@ -88,6 +88,16 @@ h4 {
   justify-content: center;
 }
 
+/*no results message*/
+
+.no-results-text {
+  font-family: "bebas neue";
+  text-align: center;
+  font-size: 40px;
+  display: none;
+  color: red;
+}
+
 /*social media banner*/
 li {
   list-style-type: none;
