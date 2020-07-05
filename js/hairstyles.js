@@ -184,6 +184,7 @@ function activateFilter(newPropertyName, newPropertyValue) {
 }
 
 let accordMenu = document.getElementsByClassName("collapsible");
+
 let i;
 
 for (i = 0; i < accordMenu.length; i++) {
