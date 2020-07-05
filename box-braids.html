@@ -1,55 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hair Pick | About</title>
-    <link href="./box-braids.css" rel="stylesheet"/>
-    <link rel="icon" href="http://example.com/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
-    <link rel="icon" href="./images/logo-icon.ico" type="image/x-icon"/>
-</head>
-<body class="body-container">
+    <link href="./box-braids.css" rel="stylesheet" />
+    <link rel="icon" href="http://example.com/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/logo-icon.ico" type="image/x-icon" />
+  </head>
+  <body class="body-container">
     <header>
-        <div id = "logo">
-            <img src ="./images/logo-small.png" alt= "Hair Pick Logo">
-        </div>
-    <nav class = "container-nav ">
+      <div id="logo">
+        <img src="./images/logo-small.png" alt="Hair Pick Logo" />
+      </div>
+      <nav class="container-nav">
         <a href="./index.html" id="home">Home</a>
         <a href="./hairstyles.html" id="hairstyles">Hairstyles</a>
         <a href="./about.html" id="about">About</a>
-    </nav>
-</header> 
-<h1>BOX BRAIDS</h1>
-<h4>Things you will need for Box Braids:</h4>
-<section class = "instructions-container">
-<ul>Comb</ul>
-<ul>4-8 packs hair</ul>
-<ul>Hairclips</ul>
-</section>
-<section class="video-container">
-    <iframe src="https://www.youtube.com/embed/eS64yozs10U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
-<h4>FINISHED RESULT</h4>
-<div><img class="braid-image" src ="images/box braids.jpg"></div>
-<footer>
-    <div class ="mailing-list">
+      </nav>
+    </header>
+    <h1>BOX BRAIDS</h1>
+    <h4>Things you will need for Box Braids:</h4>
+    <section class="instructions-container">
+      <ul>
+        Comb
+      </ul>
+      <ul>
+        4-8 packs hair
+      </ul>
+      <ul>
+        Hairclips
+      </ul>
+    </section>
+    <section class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/eS64yozs10U"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <h4>FINISHED RESULT</h4>
+    <div><img class="braid-image" src="images/box braids.jpg" /></div>
+    <footer>
+      <div class="mailing-list">
         <h3>Need inspiration for your next do?</h3>
-        <p>Join the Hair Pick mailing list for tips, advice and new hair care products.</p>
+        <p>
+          Join the Hair Pick mailing list for tips, advice and new hair care
+          products.
+        </p>
         <form action="/action_page.html">
-        Name: 
-        <input type="text" name="name" required placeholder="Enter your name">
-        Email:
-        <input type="email" name="email" required placeholder="Enter email address">
-        <button class ="email-submit" onclick="emailFunction()">Subscribe</button>
-    </form>
-</div>
-</footer>
-</body>
-<script>
-function emailFunction(){
-alert("Did you input your details? If you did, thank you for signing up");
-}
-</script>
+          Name:
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="Enter your name"
+          />
+          Email:
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Enter email address"
+          />
+          <button class="email-submit" onclick="emailFunction()">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function emailFunction() {
+      alert("Did you input your details? If you did, thank you for signing up");
+    }
+  </script>
 </html>
